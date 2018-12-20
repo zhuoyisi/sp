@@ -1,0 +1,192 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>{$glo.index_title}</title>
+   <meta name="keywords" content="{$glo.web_keywords}" />
+   <meta name="description" content="{$glo.web_descript}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="/style/new/css/main.css">
+    <link rel="stylesheet" href="/style/new/css/common.css">
+    <script src="/Style/new/js/jquery-1.7.2.js" type=text/javascript></script>
+    <style>
+        .menuhover {
+            color: #272626;
+            border-top: 1px solid #ecebeb;
+            border-bottom: 1px solid #ecebeb;
+            background: #f3f3f3;
+        }
+    </style>
+</head>
+
+<body>
+    <include file="Public:_header_inner"/>
+    <!--公共头部部分-----------end------------>
+    <!--计算器-->
+    <div class="calculator">
+        <div class="cal_tit"><h3>借款计算器</h3></div>
+        <div class="cal_label">
+            <form action="" method="post">
+                <div class="lst_fields_count">
+                    <label class="cell_label">借款金额：</label>
+                    <input type="text" name="bid_money" class="input_txt" value="">
+                    <label class="cell_label">借款期限：</label>
+                    <select class="input_select" name="bid_duration">
+                        <option value="">请选择</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                    </select>
+                    <span class="txt_note_red">个月</span>
+                    <button type="submit" class="btnt_red_small"><a class="btnt_red_small" href="../tools/tool.html">计算费用</a></button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="jiekuancon">
+        <div class="nav_list">
+            <div class="nav_tit"><h3>我要借款</h3></div>
+            <div class="navlist">
+                <ul>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(0)" id="ynav0">发布信用标</a></li>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(1)" id="ynav1">发布担保标</a></li>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(2)" id="ynav2">发布秒还标</a></li>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(3)" id="ynav3">发布净值标</a></li>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(4)" id="ynav4">发布抵押标</a></li>
+                    <li><a href="javascript:void(0)" onmouseover="javascript:qiehuan1(5)" id="ynav5">发布直投标</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jiekuannr" id="qh_conn0" style="display:block">
+            <div class="jiekuannr_tit"><p><span><a href="__ROOT__/borrow/post/normal.html">发布借款</a></span> 信用标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>额度</p>
+                可使用额度：{$minfo.credit_limit|Fmoney=###}&nbsp;&nbsp;&nbsp;&nbsp;总额度：{$minfo.credit_cuse|Fmoney=###}&nbsp;&nbsp;&nbsp;&nbsp; 已使用额度：{:Fmoney($minfo['credit_cuse']-$minfo['credit_limit'])}&nbsp;&nbsp;&nbsp;&nbsp;额度状态：<if condition="$minfo.credit_cuse gt 0">正常<else />额度不足</if>
+                <p>详细说明</p>
+                信用借款标显示"信"字标记，是一种免抵押、免担保、纯信用，的小额个人信用贷款标，主要面向固定收入群体开放。如借款人到期还款出现困难，逾期约定时间由网站运营方垫付本金息还款，债权转让为网站运营方所有。 <br />
+                另外逾期每天按约定收取罚息，本金利息及罚息全部为网站运营方收取.<br />
+                <b>信用标借贷流程</b>：<br />
+                借贷者点下方按扭按提示提交申请->通过工作人员初审核->投资者开始投标->满标进入复审->通过复审的标打款给借贷者->按约定支付利息、本金->还款完成->本次合作完成！<br /><br />
+                <p>申请条件：</p>
+                18-55岁中国公民<br />
+                月入3000元以上
+                        </div>
+        </div>
+        <div class="jiekuannr" id="qh_conn1" style="display:none;">
+            <div class="jiekuannr_tit"><p><span><a href="__ROOT__/borrow/post/vouch.html">发布借款</a></span> 担保标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>额度</p>
+                可使用额度：50万&nbsp;&nbsp;&nbsp;&nbsp;总额度：50万&nbsp;&nbsp;&nbsp;&nbsp;已使用额度：0&nbsp;&nbsp;&nbsp;&nbsp;额度状态：正常
+                <p>详细说明</p>
+                机构担保借款标显示标记"担"，是有担保机构进行担保的借款，担保人和借款人之间协商并签订抵押担保手续，确保风险控制在合理的范围内。如借款人到期还款出现逾期，由担保机构垫付本息还款，债权转让为担保人所有。借款者可以提供担保公司或者由我们网站合作担保公司进行担保必须在我们网站工作人员在场签定好担保合同。由于有第三方担保公司进行担保相对来说此类标安全系数高。 <br /><br />
+                <p>申请条件：</p>
+                有担保机构为其进行担保<br>
+                    逾期由担保机构垫付本息还款
+            </div>
+        </div>
+        <div class="jiekuannr" id="qh_conn2" style="display:none;">
+            <div class="jiekuannr_tit"><p><span><a href="__ROOT__/borrow/post/second.html">发布借款</a></span> 秒还标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>额度</p>
+                可使用额度：50万&nbsp;&nbsp;&nbsp;&nbsp;总额度：50万&nbsp;&nbsp;&nbsp;&nbsp;已使用额度：0&nbsp;&nbsp;&nbsp;&nbsp;额度状态：正常
+                <p>详细说明</p>
+                秒还标显示标记"秒"，借款者发布秒还标，利息和管理费将被冻结，投标满后，系统自动审核通过，发标人瞬间送出利息和管理费，投资者则收回本金和利息。秒还标是一种娱乐庆祝送钱的标，可以很快提升发标者的积分，把快乐送给大家。<br /><br />
+                <p>申请条件：</p>
+                在网站有过投资记录并且账户金额能够支付发这次秒标的手续费以及利息
+            </div>
+        </div>
+        <div class="jiekuannr" id="qh_conn3" style="display:none;">
+            <div class="jiekuannr_tit"><p><span><a href="__ROOT__/borrow/post/net.html">发布借款</a></span> 净值标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>额度</p>
+                可使用额度：{$netMoney|default="0.00"}</php>&nbsp;&nbsp;&nbsp;&nbsp;总额度：{$allnetMoney|default="0.00"}&nbsp;&nbsp;&nbsp;&nbsp;已使用额度：{:Fmoney($allnetMoney-$netMoney)}&nbsp;&nbsp;&nbsp;&nbsp;额度状态：<if condition="$netMoney gt 0">正常<else />额度不足</if>
+                <p>详细说明</p>
+                净值借款标显示标记"净"，如果客户净资产大于借款金额，网站运营方允许发布净值借款标用于临时周转。他是一种相对安全系数很高的借款标，因此利率方面可能比较低，适合资金黄牛，用户可以借助此标放大自己的投资标。 净值借款标逾期后约定时间由网站先行垫付本息还款。
+                <br />信用标借贷流程<br />
+                申请条件：投资多少钱便有多少净值额度！ <br />计算公式：投资待收总额-借款净值标待还的总额=可借额度<br /><br />
+                <p>申请条件：</p>
+                本网站的投资者<br />
+                在本网站拥有一定债权，以站内债权为担保
+            </div>
+        </div>
+        <div class="jiekuannr" id="qh_conn4" style="display:none;">
+            <div class="jiekuannr_tit"><p><span><a href="__ROOT__/borrow/post/mortgage.html">发布借款</a></span> 抵押标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>额度</p>
+                可使用额度：50万&nbsp;&nbsp;&nbsp;&nbsp;总额度：50万&nbsp;&nbsp;&nbsp;&nbsp;已使用额度：0&nbsp;&nbsp;&nbsp;&nbsp;额度状态：正常
+                <p>详细说明</p>
+                抵押借款标显示标记"抵"，是网站运营方经过线下严格核查借款人资产负债，抵押手续（不仅限）、有关政府以及商业银行推荐、优质资产和股权质押，确保风险控制在合理的范围内。抵押标借款者对象一般为地区优质中小微企业，是网站运营方重点发展对象。借款人到期还款出现困难，借款到期日当天由网站运营方垫付本金和利息还款，债权为网站运营方所有。抵押标逾期后，每天按约定收取罚息，本金利息及罚息全部为网站运营方收取。<br /><br />
+                <p>申请条件：</p>
+                有关政府以及商业银行推荐、优质资产和股权,<br />
+                一般为地区优质中小微企业、并且办理相关抵押手续
+            </div>
+        </div>
+        <div class="jiekuannr" id="qh_conn5" style="display:none;">
+            <div class="jiekuannr_tit"><p><span style="display:none;"><a href="__ROOT__/borrow/post/mortgage.html">发布借款</a></span> 企业直投标介绍</p></div>
+            <div class="jiekuannr_nr">
+                <p>详细说明</p>
+                P2C借贷模式是在P2P网络借贷的基础上创新的一种新型模式更加稳定，更加低风险的一种理财方式。p2c借贷模式是即投即开始计算收益投资者资金不会站岗。P2C的借款人则以企业为主，企业信息及企业运营相对固定，有稳定的现金流及还款来源，信息容易核实，同时企业的违约成本远高于个人；P2P一般采用信用贷款形式，；而P2C则要求必须有担保、有抵押，安全性相对更好。<br /><br />
+                <p>申请条件：</p>
+                优质的企业和机构
+                <p>所需材料：</p>
+                担保债权合同手续 相关抵押物
+            </div>
+        </div>
+    </div>
+
+    <script language=javascript>
+        function qiehuan1(num) {
+            for (var id = 0; id < 6; id++) {
+                if (id == num) {
+                    document.getElementById("qh_conn" + id).style.display = "block";
+                    document.getElementById("ynav" + id).className = "menuhover";
+                }
+                else {
+                    document.getElementById("qh_conn" + id).style.display = "none";
+                    document.getElementById("ynav" + id).className = "";
+                }
+            }
+        }
+        function gototool() {
+            window.navigate("../tools/tool.html");
+        }
+    </script>
+    <include file="Public:_footer"/>
+</html>

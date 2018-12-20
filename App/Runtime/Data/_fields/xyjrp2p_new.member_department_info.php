@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'uid', 1 => 'department_name', 2 => 'department_tel', 3 => 'department_address', 4 => 'department_year', 5 => 'voucher_name', 6 => 'voucher_tel', '_autoinc' => false, '_pk' => 'uid', ); ?>

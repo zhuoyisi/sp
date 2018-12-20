@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'uid', 2 => 'interest_rate', 3 => 'duration_from', 4 => 'duration_to', 5 => 'account_money', 6 => 'end_time', 7 => 'add_time', 8 => 'add_ip', 9 => 'is_auto_full', 10 => 'invest_money', 11 => 'is_use', 12 => 'borrow_type', 13 => 'min_invest', 14 => 'invest_time', '_autoinc' => true, '_pk' => 'id', ); ?>

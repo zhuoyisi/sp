@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'borrow_id', 1 => 'deal_user', 2 => 'deal_time', 3 => 'deal_info', 4 => 'deal_time_2', 5 => 'deal_user_2', 6 => 'deal_info_2', 7 => 'deal_status', 8 => 'deal_status_2', '_autoinc' => false, '_pk' => 'borrow_id', ); ?>

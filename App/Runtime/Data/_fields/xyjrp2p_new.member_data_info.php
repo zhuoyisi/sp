@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'uid', 2 => 'data_url', 3 => 'data_url1', 4 => 'data_url2', 5 => 'data_url3', 6 => 'data_url4', 7 => 'type', 8 => 'status', 9 => 'add_time', 10 => 'data_name', 11 => 'size', 12 => 'ext', 13 => 'deal_info', 14 => 'deal_credits', 15 => 'deal_user', 16 => 'deal_time', '_autoinc' => true, '_pk' => 'id', ); ?>

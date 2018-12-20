@@ -1,0 +1,433 @@
+<include file="Public:_header_common" />
+<title>{$glo.index_title}</title>
+<meta name="keywords" content="{$glo.web_keywords}" />
+<meta name="description" content="{$glo.web_descript}" />
+
+<SCRIPT src="/Style/new/js/jquery-1.7.2.js" type=text/javascript></SCRIPT>
+<SCRIPT src="/Style/new/js/js-lunbo.js" type=text/javascript></SCRIPT>
+<SCRIPT src="/Style/new/js/jquery.watermarkinput.js" type=text/javascript></SCRIPT>
+
+
+</head>
+<include file="Public:_header_main" />
+
+<!--公共头部部分-----------end------------>
+
+<!--banner部分-->
+<div class=banner_zhuce>
+  <div class=banner_zhuce_ding>
+  <h1>翔易贷年化收益率</h1>
+  <P class=p1>高达<span>13%</span></P>
+  <P class=p2>相当于<span>30</span>倍活期存款收益</P>
+  <P class=p3><a href="/member/common/register/"><!--<input type="button" value="立即注册"/>-->立即注册</a></P>
+  <P class=p4>已有账号?<a class=a2 href="/member/common/login/">立即登录</a></P>
+  <div class=banner_zhuce_ding1></div>
+  </div>
+</div>
+
+<div class=lunhuan><!-- 轮播图片 -->
+  <div id=lunhuanback>
+    <P style="background-image: url(/Style/new/images/banner1.jpg); background-color: #ffffff; opacity: 1"></P>
+    <P style="background-image: url(/Style/new/images/banner2.jpg); background-color: #ffffff"></P>
+    <P style="background-image: url(/Style/new/images/banner3.jpg); background-color: #ffffff"></P>
+    <P style="background-image: url(/Style/new/images/banner4.jpg); background-color: #ffffff"></P>
+    <P style="background-image: url(/Style/new/images/banner5.jpg); background-color: #ffffff"></P>
+  </div>
+  <div class=lunhuan_main>
+    <div>
+    <a style="height: 330px; z-index: 1000; display: block; width: 100%" href="#" target=_blank></a>
+    <a style="height: 330px; z-index: 1000; display: block; width: 100%" href="#" target=_blank></a>
+    <a style="height: 330px; z-index: 1000; display: block; width: 100%" href="#" target=_blank></a>
+    <a style="height: 330px; z-index: 1000; display: block; width: 100%" href="#" target=_blank></a>
+    <a style="height: 330px; z-index: 1000; display: block; width: 100%" href="#" target=_blank></a>
+    </div>
+     <ul id=lunbonum>
+       <li class=lunboone></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+	 </ul>
+  </div><!-- 轮播图片 -->
+</div>
+<!--banner部分------------end--------->
+
+<!--网站主体 part1 ------->
+<div class="main1">
+  <div class="notice">
+    <div class="biaoti"><span>最新公告</span></div>
+	<div id="notice_nr">
+
+        <!-- <volist name="noticeList.list" id="vn">-->
+        <php>foreach($noticeList['list'] as $kx => $vn){</php>
+       
+			 <li><a href="{$vn.arturl}">{$vn.title|cnsubstr=###,8}</a></li>
+
+        <php>};$noticeList=NULL;</php>
+        <!--</volist>-->
+
+	</div>
+  </div>
+  <script>
+var c,_=Function;
+with(o=document.getElementById("notice_nr")){ innerHTML+=innerHTML; onmouseover=_("c=1"); onmouseout=_("c=0");}
+(F=_("if(#%20||!c)#++,#%=o.scrollHeight>>1;setTimeout(F,#%20?10:1500);".replace(/#/g,"o.scrollTop")))();
+</script>
+  <div class="data">
+    <div class="shuju1">已有 <span>{$members}</span> 名精英投资加入我们</div>
+	<div class="shuju2">累计成交总额高达 <span>{:Fmoney($receive_capital+$receive_interest)}</span> 元</div>
+	<div class="shuju3">累计为客户赚取 <span>{:Fmoney($receive_interest)}</span> 元</div>
+  </div>
+</div>
+
+<!--网站主体 part2------->
+<div class="main2">
+  <div class="info"><img src="/Style/new/images/info.jpg" /></div>
+</div>
+
+<!--网站主体 part2------->
+<div class="main3">
+  <div class="intro">
+    <h3>投资·理财项目</h3>
+	<p>优选计划易翔贷最优惠的投资，通过中国银行在线充值免费（跨行、跨市费用自理），通过宝付在线充值收取5%的费用（该费用由第三方支付收取）</p>
+  </div>
+  
+  <!--项目开始-->
+  <div class="xiangmu">
+    <div class="jieshao">
+	  <div class="top"><h3>吉翔借贷</h3><p>短期借贷产品，放款速度优惠于同期银行及其他产品</p></div>
+	  <div class="middle"><img src="/Style/new/images/jieshao1.jpg" /></div>
+	  <div class="bottom"><img src="/Style/new/images/jieshao11.jpg" /></div>
+	</div>
+	<div class="xiangmu_nr">
+	 <!--tab选项卡开始-->
+	 <div class="tabNav">
+       <ul class="clearfix">
+        <li class="first current">公司借款</li>
+        <li class="second">个人借款</li>
+      </ul>
+    </div>
+	
+    <div class="tabContent">
+	
+	  <!--公司借款-->                 
+      <div class="borrowInfo" style="display: block;">
+        
+		<table class="table">
+                  <thead>
+                    <tr>
+                      <th width="37%">项目名称</th>
+                      <th width="10%">年化利率</th>
+                      <th width="10%">项目期限</th>
+                      <th width="10%">项目总额</th>
+                      <th width="10%">进度</th>
+                      <th width="10%">状态</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+				  
+				   <volist name="listTBorrow.list" id="vb">
+				  
+                    <tr>
+                      <td><div class="protitle"><a href="{$vb.id|getTInvestUrl=###}">{$vb.borrow_name|cnsubstr=###,50}</a></div></td>
+                      <td>{$vb.borrow_interest_rate}%</td>
+                      <td>{$vb.borrow_duration}&nbsp;<if condition="$vb['repayment_type'] eq 1">天<else/>个月</if></td>
+                      <td>{$vb.borrow_money|getMoneyFormt=###}</td>
+                      <td>{$vb.progress}%</td>
+                      <td>
+					  
+					  
+					  
+					     <if condition="$vb['transfer_out']-$vb['transfer_total'] eq 0">
+                  <div class="mybtn_2t_ok"><a><span class="zhibai">已满</span></a></div>
+                <elseif condition="$vb['online_time'] lt time()+300 and $vb['online_time'] gt time()" />
+                  <div class="mybtn_2t_ok"><a><span class="zhibai">更新中</span></a></div>
+                <elseif condition="$vb['online_time'] lt time()" />
+                  <div class="mybtn_2t"><a href="{$vb.id|getTInvestUrl=###}"><span class="zhibai">加入</span></a></div>
+				 
+				 
+				 
+				 
+                </if>
+					  </td>
+					  
+					
+                     </tr> 
+					</volist>
+				  
+                  
+					 
+					 
+					 
+					 
+                    </tbody>
+                </table>
+        <A class="indexTabVierMore" href="/tinvest/index.html" target="_blank">查看更多信息&gt;</A>
+	  </div>
+	  
+	  <!--个人借款-->      
+      <div class="lendInfo" style="display: none;">
+        
+		<table class="table">
+                  <thead>
+                    <tr>
+                      <th width="37%">项目名称</th>
+                      <th width="10%">年化利率</th>
+                      <th width="10%">项目期限</th>
+                      <th width="10%">项目总额</th>
+                      <th width="10%">进度</th>
+                      <th width="10%">状态</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+				   <volist name="listBorrow.list" id="vb">
+				  
+                    <tr>
+                      <td><div class="protitle"><a href="{$vb.id|getInvestUrl=###}">{$vb.borrow_name|cnsubstr=###,50}</a></div></td>
+                      <td>{$vb.borrow_interest_rate}%</td>
+                      <td>{$vb.borrow_duration}&nbsp;<if condition="$vb['repayment_type'] eq 1">天<else/>个月</if></td>
+                      <td>{$vb.borrow_money|getMoneyFormt=###}</td>
+                      <td>{$vb.progress}%</td>
+                      <td>
+					  <if condition="$vb.borrow_status eq 3"> <a href="javascript:;"><img class="anNiuYLB" src="__ROOT__/Style/H/images/status/touM.gif" /></a>
+              <elseif condition="$vb.borrow_status eq 4"/>
+              <a href="javascript:;"><img class="anNiuDDFS" src="__ROOT__/Style/H/images/status/touM.gif" /></a>
+              <elseif condition="$vb.borrow_status eq 6"/>
+              <a href="javascript:;"><img  class="anNiuHKZ" src="__ROOT__/Style/H/images/status/touM.gif"  /></a>
+              <elseif condition="$vb.borrow_status gt 6"/>
+              <a href="{$vb.id|getInvestUrl=###}"><img class="anNiuYWC" src="__ROOT__/Style/H/images/status/touM.gif"  /></a>
+              <else/>
+              <a href="{$vb.id|getInvestUrl=###}"><img class="anNiuTB" src="__ROOT__/Style/H/images/status/touM.gif" /></a> </if></td>
+				 
+				 
+				 
+				 
+                </if>
+					  
+					  
+					
+                     </tr> 
+					</volist>
+
+					
+                    </tbody>
+                </table>
+		
+        <A class="indexTabVierMore" href="/invest/index.html">查看更多信息&gt;</A>
+	  </div>
+	 
+	</div>
+	<!--tab选项卡结束-->
+	</div>
+  </div>
+  <!--项目结束-->
+  
+
+  <!--项目开始-->
+  <div class="xiangmu2">
+    <div class="jieshao2">
+	  <div class="top2"><h3>债权转让</h3><p>投资人将持有一定时间的债权向其他债权人转让</p></div>
+	  <div class="middle2"><img src="/Style/new/images/jieshao2.jpg" /></div>
+	  <div class="bottom2"><img src="/Style/new/images/jieshao22.jpg" /></div>
+	</div>
+	<div class="xiangmu_nr2">
+	  <!--债权转让-->                 
+      <div class="borrowInfo" style="display: block;">
+        
+		<table class="table2">
+                  <thead>
+                    <tr>
+                      <th width="27%">项目名称</th>
+                      <th width="10%">年化利率</th>
+                      <th width="10%">转让价格</th>
+                      <th width="10%">待收本息</th>
+                      <th width="20%">转让期数/总期数</th>
+                      <th width="10%">状态</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+			
+				  
+				  <volist name="list.data" id="vb">
+                    <tr>
+                      <td><div class="protitle"><a href="/debt/detail?id={$vb.id}&iid={$vb.invest_id}">{$vb.borrow_name|cnsubstr=###,22}</a></div></td>
+                      <td>{$vb.borrow_interest_rate}%</td>
+                      <td>{$vb.transfer_price|default=0}</td>
+                      <td>￥{$vb.money|default=0}</td>
+                      <td>{$vb.period}期/{$vb.total_period}</td>
+                      <td>   <if condition="$vb.status eq '2'"> <a href="javascript:;" onclick="buy_debt('{$vb.invest_id}')"><img class="anNiuYLB" src="__ROOT__/Style/H/images/status/toubiao.gif" /></a>
+                            <elseif condition="$vb.status eq '4'"/>
+                            <img  class="anNiuHKZ" src="__ROOT__/Style/H/images/status/ywc.gif"  /> </if>
+							</td>
+                     </tr> 
+					 </volist>
+					 
+					 
+					 
+					 
+					
+                    </tbody>
+                </table>
+        <A class="indexTabVierMore" href="/debt/index.html" target="_blank">查看更多信息&gt;</A>
+	  </div>
+	</div>
+  </div>
+  <!--项目结束-->
+  
+  
+  <!--项目开始-->
+  <div class="xiangmu3">
+    <div class="jieshao3">
+	  <div class="top3"><h3>翔财有道</h3><p>短期理财产品，收益高于货币基金及同期银行理财产品</p></div>
+	  <div class="middle3"><img src="/Style/new/images/jieshao3.jpg" /></div>
+	  <div class="bottom3"><img src="/Style/new/images/jieshao33.jpg" /></div>
+	</div>
+	<div class="xiangmu_nr3">
+	  <!--债权转让-->                 
+      <div class="borrowInfo" style="display: block;">
+        
+		<table class="table3">
+                  <thead>
+                    <tr>
+                      <th width="37%">项目名称</th>
+                      <th width="10%">年化利率</th>
+                      <th width="10%">项目期限</th>
+                      <th width="10%">项目总额</th>
+                      <th width="10%">进度</th>
+                      <th width="10%">状态</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+		
+				   <volist name="listFBorrow.list" id="vb">
+				  
+                    <tr>
+                      <td><div class="protitle"><a href="{$vb.id|getFundUrl=###}">{$vb.borrow_name|cnsubstr=###,50}</a></div></td>
+                      <td>{$vb.borrow_interest_rate}%</td>
+                      <td>{$vb.borrow_duration}&nbsp;<if condition="$vb['repayment_type'] eq 1">天<else/>个月</if></td>
+                      <td>{$vb.borrow_money|getMoneyFormt=###}</td>
+                      <td>{$vb.progress}%</td>
+                      <td>
+					  
+					  
+					  
+					     <if condition="$vb['transfer_out']-$vb['transfer_total'] eq 0">
+                  <div class="mybtn_2t_ok"><a><span class="zhibai">已满</span></a></div>
+                <elseif condition="$vb['online_time'] lt time()+300 and $vb['online_time'] gt time()" />
+                  <div class="mybtn_2t_ok"><a><span class="zhibai">更新中</span></a></div>
+                <elseif condition="$vb['online_time'] lt time()" />
+                  <div class="mybtn_2t"><a href="{$vb.id|getFundUrl=###}"><span class="zhibai">加入</span></a></div>
+				 
+				 
+				 
+				 
+                </if>
+					  
+					  
+					
+                     </tr> 
+					</volist>
+                    </tbody>
+                </table>
+        <A class="indexTabVierMore" href="/fund/index.html" target="_blank">查看更多信息&gt;</A>
+	  </div>
+	</div>
+  </div>
+  <!--项目结束-->
+  
+</div>
+
+<!--网站主体4视频-->
+<div class="main4">
+   <div class="report-content">
+       <div class="banner-cctv">
+           <a href="#" target="_blank" class="banner-cctv-1"></a>
+            <div class="cctv_new">
+                 <div class="new_tit">新闻中心</div>
+				 <div class="new_nr">
+                   <ul>
+				   <php>$xlist = getArticleList(array("type_id"=>2,"pagesize"=>8)); foreach($xlist['list'] as $kx => $va){</php>
+                     <li><a href="{$va.arturl}" target="_blank">{$va.title|cnsubstr=###,18}</a></li>	
+        <php>};$xlist=NULL;</php>
+                   </ul>
+				  </div>
+                 </div>
+           </div>
+       </div>
+</div>
+
+<!--网站主体5 新闻和图片链接-->
+
+<div class="main5">
+  <div class="shang">
+    <div class="shang_l">
+	  <div class="rumen">
+	    <h3>新手入门</h3>
+		<div class="rumen_nr">
+	     <ul>
+	 <ul>
+				   <php>$xlist = getArticleList(array("type_id"=>22,"pagesize"=>5)); foreach($xlist['list'] as $kx => $va){</php>
+                     <li><a href="{$va.arturl}" target="_blank">{$va.title|cnsubstr=###,18}</a></li>	
+        <php>};$xlist=NULL;</php>
+                   </ul>
+		 </ul>
+		</div>
+	  </div>
+	  
+	  <div class="bangdan">
+	    <h3>投资榜单</h3>
+		<div class="bangdan_nr">
+	     
+		</div>
+	  </div>
+	  
+	  <div class="yihuankuan">
+	    <h3>已还款表</h3>
+		<div class="yihuankuan_nr">
+	     
+		</div>
+	  </div>
+	  
+	</div>
+  </div>
+  <div class="zhong">
+    <div class="hezuo">
+	  <h3>我们的合作伙伴<p> &nbsp;&nbsp;我们携手合作伙伴共同探索P2P行业的创新和发展</p></h3>
+	  <div class="hezuo_nr">
+	    <ul>
+		
+		 <volist name=":get_ad(10)" id="va">
+            <li> <a href="{$va.url}"><img src="__ROOT__/{$va.img}" /></a> </li>
+          </volist>
+		</ul>
+	  </div>
+	</div>
+  </div>
+  <div class="xia">
+    <div class="lianjie">
+	  <h3>友情链接<p>&nbsp;&nbsp;我们携手合作伙伴共同探索P2P行业的创新和发展</p></h3>
+	  <div class="lianjie_nr">
+	    <ul>
+		<volist name=":get_home_friend(1,1)" id="vf">
+							
+								
+								 <li><A href="{$vf.link_href}" target="_blank" rel="nofollow"><IMG alt="{$vf.link_txt}" src="__ROOT__/{$vf.link_img}"></A></li>
+								
+								</li>
+							</volist>
+		
+		
+		
+		 
+		
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<!--网站主体6 底部菜单-->
+<include file="Public:_footer" />
+</html>
+     
+<SCRIPT src="/Style/new/js-tab/index20150601.js" type="text/javascript" charset="utf-8"></SCRIPT>

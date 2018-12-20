@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'uid', 2 => 'uname', 3 => 'tid', 4 => 'type', 5 => 'comment', 6 => 'add_time', 7 => 'deal_time', 8 => 'deal_info', 9 => 'name', '_autoinc' => true, '_pk' => 'id', ); ?>

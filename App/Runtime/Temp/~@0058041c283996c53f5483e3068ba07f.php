@@ -1,0 +1,7 @@
+<?php
+//000000000000a:35:{s:12:"web_keywords";s:76:"临沂网络借贷,临沂担保贷款,临沂借贷,临沂投资,今劢官网";s:12:"web_descript";s:219:"票据钱柜官方网站，是中国首家信用兼担保型互助贷款平台，在健全的风险管控体系基础上,为中小企业及个人客户提供专业,可信赖的投融资服务,助您财富实现增值！";s:9:"is_manual";s:1:"0";s:15:"auto_back_time ";s:8:"23:59:59";s:8:"web_name";s:12:"票据钱柜";s:11:"index_title";s:67:"今劢商票交易系统-今劢商票交易管理平台管理系统";s:6:"bottom";s:242:"<div class="copyright">© 版权所有 2018 山东今劢资产管理股份有限公司</A> 
+   <span>备案号：<a href="#" target="_blank" style="color:#000;">
+  </div></a>
+</span>		 
+   <P>Copyright 2017 - 2020  All Rights Reserved</P>";s:7:"fee_vip";s:1:"0";s:11:"fee_expired";s:3:"0|0";s:8:"fee_call";s:4:"30|8";s:14:"offline_reward";s:13:"0-0|0-0|0|0|0";s:8:"fee_tqtx";s:19:"0-0|0-0|0-100000000";s:9:"rate_lixi";s:7:"0.01|24";s:17:"fee_invest_manage";s:1:"0";s:19:"borrow_duration_day";s:5:"1|180";s:15:"borrow_duration";s:4:"1|12";s:13:"money_deposit";s:1:"0";s:10:"fee_idcard";s:1:"0";s:9:"limit_vip";s:1:"0";s:17:"fee_borrow_manage";s:16:"0.25|0.25|0.25|1";s:13:"customer_rate";s:1:"0";s:13:"credit_borrow";s:10:"-3|-10|100";s:15:"invest_integral";s:1:"1";s:12:"award_invest";s:1:"0";s:9:"back_time";s:8:"23:59:59";s:9:"edit_bank";s:1:"1";s:12:"today_reward";s:5:"0|0|0";s:9:"admin_url";s:5:"admin";s:8:"debt_fee";s:1:"0";s:10:"debt_audit";s:1:"1";s:12:"lottery_cost";s:2:"30";s:9:"auto_rate";s:2:"10";s:9:"login_num";s:1:"0";s:15:"team_push_money";s:1:"0";s:17:"broker_push_money";s:1:"0";}
+?>

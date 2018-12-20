@@ -1,0 +1,112 @@
+<include file="Public:_header_common" />
+<title>{$glo.web_name}运营数据</title>
+<meta name="keywords" content="{$glo.web_keywords}" />
+<meta name="description" content="{$glo.web_descript}" />
+<link rel="stylesheet" href="/Style/new/css/common.css">
+
+</head>
+<include file="Public:_header_main" />
+
+<!--公共头部部分-----------end------------>
+
+<div class="nei-ban">
+  <div class="nei-banner"><img src="/Style/new/images/shujuban.jpg" /></div>
+</div>
+
+<div class="baozhang-nav">
+  <li><a href="#01">会员数据统计</a></li>
+  <li><a href="#02">借贷总额信息</a></li>
+  <li><a href="#03">借贷笔数信息</a></li>
+  <li><a href="#04">出借人信息统计</a></li>
+  <li><a href="#05">借款人信息统计</a></li>
+  <li><a href="#06">逾期数据统计</a></li>
+</div>
+
+<div class="baozhangnr" id="01">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang1.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit">【会员数据统计】</div>
+		&nbsp;
+        <div class="baozhangtxt" style="color:#333333;font-weight:bold">会员总数：{$members}</div>
+    </div>
+</div>
+
+<div class="baozhangnr" id="02">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang2.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit2">【借贷总额信息】</div>
+        <div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计借贷总额：{:Fmoney($receive_capital)}元
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            借贷余额：{:Fmoney($receive_capitalr)} 元
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计收益总额：{:Fmoney($receive_interest)}元
+        </div>
+    </div>
+</div>
+
+<div class="baozhangnr" id="03">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang3.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit3">【借贷笔数信息】</div>
+        <div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计借贷笔数：{$total}笔
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            待还笔数：{$totalr}笔
+        </div>
+    </div>
+</div>
+
+<div class="baozhangnr" id="04">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang4.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit4">【出借人信息统计】</div>
+        <div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计出借人数量：{$total_allr}人
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            当前出借人数量：{$totalr_allr}人
+        </div>
+    </div>
+</div>
+
+<div class="baozhangnr" id="05">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang5.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit5">【借款人信息统计】</div>
+        <div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计借款人数量：{$total_all}人
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            当前借款人数量：{$totalr_all}人
+        </div>
+    </div>
+</div>
+
+<div class="baozhangnr" id="06">
+    <div class="baozhangnr_L"><img src="/Style/new/images/baozhang6.jpg" /></div>
+    <div class="baozhangnr_R">
+        <div class="baozhangtit6">【 逾期数据统计 】</div>
+         <div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计逾期笔数：0 笔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;累计逾期金额：0 元
+        </div>
+		
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            逾期90天以上笔数：0 笔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;逾期90天以上金额：0 元
+        </div>
+		<div class="baozhangtxt" style="color:#333333;font-weight:bold">
+            累计代偿笔数：0 笔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;累计代偿金额：0 元
+        </div>
+    </div>
+</div>
+
+<include file="Public:_footer" />
+
+
+
+</body>
+</html>
+

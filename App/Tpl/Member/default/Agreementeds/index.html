@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>翔e债权投资协议-{$glo.web_name}</title>
+<style>
+  .Lending_Agreement {
+  	width:100%;
+  	height:auto;
+  	margin:0px;
+  	padding:0px;
+  }
+  .Lending_Agreement_center {
+  	width:1024px;
+  	height:auto;
+  	margin:0 auto;
+  	border:1px solid #EEEEEE;
+  }
+  .lending_ageeement_tit {
+  	width:960px;
+  	height:45px;
+  	line-height:45px;
+  	color:#666666;
+  	font-family:Arial, Helvetica, sans-serif;
+  	font-size:28px;
+  	font-weight:bold;
+  	text-align:center;
+  	margin:0 auto;
+  	margin-top:30px;
+  	border-bottom:1px solid #EEEEEE;
+  }
+  .ageeement_content {
+  	width:1000px;
+  	height:auto;
+  	margin:0 auto;
+  	margin-top:30px;
+  	font-size:18px;
+  	font-weight:bold;
+  	color:#666666;
+  	overflow:auto;
+  	font-family:Arial, Helvetica, sans-serif;
+  }
+  .ageeement_content h3 {
+  	font-size:18px;
+  	font-weight:bold;
+  	color:#666666;
+  	font-family:Arial, Helvetica, sans-serif;
+  	padding-left:10px;
+  }
+  .font_lendig {
+  	font-size:22px;
+  	font-weight:bold;
+  	color:#666666;
+  	font-family:Arial, Helvetica, sans-serif;
+  	padding-left:10px;
+  	margin-bottom:10px;
+  	display:block;
+  	margin-top:20px;
+  }
+  .ageeement_content p {
+  	line-height:26px;
+  	font-family:Tahoma, Geneva, sans-serif;
+  	font-size:20px;
+  	color:#666666;
+  	margin:0px;
+  	font-weight:normal;
+  	padding-left:10px;
+  	margin-top:6px;
+  }
+  .ageement_tab {
+  	height:40px;
+  	line-height:40px;
+  }
+  .ageement_tab_ite {
+  	height:40px;
+  	line-height:40px;
+  	font-weight:normal;
+  }
+  .lending_top_inf {
+  	width:1000px;
+  	height:auto;
+  	margin-left:10px;
+  }
+  .lending_logo {
+  	width:1000px;
+  	height:100px;
+  	border-bottom:2px solid #EEEEEE;
+  }
+  .lenging_left_logo {
+  	width:252px;
+  	height:100px;
+  	float:left;
+  	border-bottom:2px solid #00ADEE;
+  }
+  .name_inf {
+  	width:400px;
+  	height:65px;
+  	float:left;
+  	margin-left:40px;
+  	margin-top:2px;
+  }
+  .lenging_right_inf {
+  	width:260px;
+  	height:50px;
+  	float:left;
+  	margin-top:9px;
+  }
+  .lenging_right_inf ul {
+  	margin:0px;
+  	padding:0px;
+  }
+  .lenging_right_inf ul li {
+  	width:400px;
+  	height:25px;
+  	line-height:25px;
+  	font-family:Arial, Helvetica, sans-serif;
+  	font-size:20px;
+  	color:#999999;
+  	list-style:none;
+  	float:left;
+  	padding-left:0px;
+  }
+  .lenging_right_inf ul li a {
+  	color:#999999;
+  	text-decoration:none;
+  }
+  .lenging_right_inf ul li a:hover {
+  	color:#FF9900;
+  	text-decoration:none;
+  }
+  .Seal {
+  	width:auto;
+  	height:auto;
+  	margin-right:20px;
+  	float:right;
+  	text-align:center;
+  }
+  .seal_text {
+  	font-family:Arial, Helvetica, sans-serif;
+  	font-size:20px;
+  	color:#999999;
+  	margin-top:6px;
+  	margin-bottom:40px;
+  	display:block;
+  	font-weight:normal;
+  }
+  .Agreement_pic {
+  	width:200px;
+  	height:45px;
+  	margin:0 auto;
+  }
+  a,a:visited{color: #E67714; text-decoration:none;}
+</style>
+<script type="text/javascript" language="javascript">
+	function printht(){
+		window.print();
+	} 
+</script>
+</head>
+<body>
+<div class="Lending_Agreement">
+  <div class="Lending_Agreement_center">
+    <!--顶部信息开始-->
+    <div class="lending_top_inf">
+      <div class="lending_logo">
+        <div class="lenging_left_logo"><a href="/" target="_blank">{:get_ad(1)}</a></div>
+        <div class="name_inf"></div>
+        <div class="lenging_right_inf">
+          <ul>
+            <li class="tel400"><!-- {:get_ad(3)} -->
+              </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--顶部信息结束-->
+    <div class="lending_ageeement_tit"><span class="Agreement_pic">债权转让合同</span><span style="float:right; padding-right:10px;"><a href="javascrīpt:void(0);" onclick="printht();" target="_self"><img src="/Style/ad_right/dayin.png" border="0" width="40px" height="20px"></a> </span></div>
+	<p align="middle">合同编号：<u><strong>XYDZQZR{$iinfo.add_time|date="Ymd",###}{$iinfo['id']}</strong></u> </p>
+    <div class="ageeement_content">
+	 <p>甲方（借款人）：<u>{$mBorrow.real_name|default='未填写'}</u></p>
+	 <p>乙方（出借人）：<u>{$mInvest.real_name|default='未填写'}</u></p>
+	 <p>丙方（见证人/服务商）：<u>山东翔宇资产管理股份有限公司（翔易贷网络服务平台）</u></p>
+	 <p>山东翔宇资产管理股份有限公司创办的网络借贷中介平台www.xyjrp2p.com（以下简称“翔易贷”），乙方同意通过翔易贷网站（网址：www.xyjrp2p.com）向甲方提供借款，同时甲方自愿用未到期翔易贷网站投资款项为债权作质押担保。各方协商一致，就具体事宜订立如下合同，以期共同遵守：</p>
+	 <strong class="font_lendig">第一条  定义</strong>
+	 <p>除非缔约方另有约定，本合同下列术语定义如下:<br />
+      </p>
+	  <p>1.筹集期：指甲方在翔易贷网站发布借款申请时所设定的筹资期限。乙方应在该期限内承诺出借，同时将出借资金划至翔易贷平台指定的银行账户，该期限以翔易贷网站发布的信息为准。</p>
+	  <p>2.账户：本合同所指的乙方、甲方账户专指其在翔易贷网站绑定的银行账户。</p>
+	   <strong class="font_lendig">第二条  合同订立与生效</strong>
+	   <p>1.甲方登录翔易贷网站发布借款申请时以网络页面点击确认的方式订立本合同，订立合同时,第三条第（一）款“乙方信息”为空白，甲方授权并认可翔易贷平台根据最终撮合结果自动生成乙方信息，不以此为由拒绝履行本合同项下的义务。</p>
+	  <p>2.乙方于筹集期内登录翔易贷网站阅读并确认本合同内容，然后在翔易贷网站以其绑定的银行账户或翔易贷平台认可的其他支付方式支付出借资金，订立合同。乙方订立合同时，第三条第(一)款“乙方信息”为该单个乙方对应的信息。</p>
+	  <p>3.甲方、乙方登录翔易贷网站完成合同订立后，本合同成立；筹集期满达到最低筹集金额后，乙方的出借资金划转至甲方账户时，本合同生效。</p>
+	  <p>不符合前款条件的，视为借款不成功，本合同不生效。</p>
+	   <strong class="font_lendig">第三条  乙方及借款信息</strong>
+      <p align="left">（一）乙方信息： </p>
+      <table  width="980" border="1px" bordercolor="#EEEEEE" cellspacing="0px" style="border-collapse:collapse;margin-top:20px;margin-left:10px;">
+        <tr class="ageement_tab">
+          <td width="196" height="40" align="center" valign="middle">真实姓名</td>
+          <td width="196" height="40" align="center" valign="middle">{$glo.web_name}帐户 </td>
+		   <td width="196" height="40" align="center" valign="middle">投资期数</td>
+          <td width="196" height="40" align="center" valign="middle">借出金额</td>
+		  <td width="196" height="40" align="center" valign="middle">年利率</td>
+          <td width="196" height="40" align="center" valign="middle">应收利息</td>
+		  <td width="196" height="40" align="center" valign="middle">本息</td>
+        </tr>
+		<volist name="detailinfo" id="vo">
+        <tr class="ageement_tab_ite">
+          <td width="196" height="40" align="center" valign="middle">{$mInvest.real_name}</td>
+          <td width="196" height="40" align="center" valign="middle">{:session('u_user_name')}</td>
+		  <td width="196" height="40" align="center" valign="middle">{$binfo.borrow_name}</td>
+          <td width="196" height="40" align="center" valign="middle">{$vo.capital}</td>
+		  <td width="196" height="40" align="center" valign="middle">{$binfo.borrow_interest_rate}%</td>
+          <td width="196" height="40" align="center" valign="middle">{$vo['interest']-$vo['interest_fee']}</td>
+		  <td width="196" height="40" align="center" valign="middle">{$vo.benxi}</td>
+        </tr>
+	    </volist>
+      </table>
+      <!--<p> <font color="red">（注：因计算中存在四舍五入，最后一期应收本息与之前略有不同！）</font></p>-->
+      <!--<p>借款人真实姓名：<u>{$mBorrow.real_name|default='未填写'}</u></p>
+      <p>{$glo.web_name}用户名：<u>{$mBorrow.user_name}</u></p>
+      <p>&nbsp;</p>
+     <p>担保方：<u>{$ht.name|default='未填写'}</u></p>
+      <p>运营地址：<u>{$ht.dizhi|default='未填写'}</u></p>
+	  <p>担保方联系电话：<u>{$ht.tel|default='未填写'}</u></p>
+	  <p>&nbsp;</p>
+	  <p align="left">第三方平台：翔易贷</p>
+      <p>鉴于：<br />
+      </p>
+      <p>1.借款人通过由山东翔宇资产管理股份有限公司创办的网络借贷中介平台www.xyjrp2p.com（以下简称“翔易贷”），向翔易贷的注册会员借款，该借款由担保方为借款人提供担保；</p>
+      <p>2.借款人已在该网站注册，并承诺其提供给担保方的信息是完全真实的；</p>
+      <p>3.投资人承诺对本协议涉及的借款具有完全的支配能力，是其自有闲散资金，为其合法所得；并承诺其提供给担保方的信息是完全真实的；</p>
+      <p>4.借款人有借款需求，投资人亦同意借款，双方有意成为借贷关系； <br />
+      <p> 各方协商一致，签订如下协议，共同遵守，共同遵照履行：</p>-->
+	  <p align="left">（二）借款信息： </p>
+      <strong class="font_lendig">第一条   借款基本信息</strong>
+      <table width="980" border="1px" bordercolor="#EEEEEE" cellspacing="0px" style="border-collapse:collapse;margin-top:20px;margin-left:10px;">
+        <tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">借款总金额</p></td>
+          <td width="379" valign="top"><p align="left">{$binfo.borrow_money}</p></td>
+        </tr>
+		<tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">借款期限</p></td>
+          <td width="379" valign="top"><p align="left">{$binfo.borrow_duration}
+          <if condition="$binfo.repayment_type eq 1">天
+            <else/>
+            个月</if></p></td>
+        </tr>
+        <tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">借款期间</p></td>
+          <td width="379" valign="top"><p align="left">{$binfo.second_verify_time|date="Y年m月d日",###}至{$binfo.deadline|date="Y年m月d日",###}</p></td>
+        </tr>
+        <tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">还款方式</p></td>
+          <td width="379" valign="top"><p align="left"> 一次性还款 </p></td>
+        </tr>
+        <tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">开始计息日</p></td>
+          <td width="379" valign="top"><p align="left">{$binfo.second_verify_time|date="Y年m月d日",###}</p></td>
+        </tr>
+        <tr class="ageement_tab">
+          <td width="182" valign="top"><p align="left">还款日</p></td>
+          <td width="379" valign="top"><p align="left">{$binfo.deadline|date="Y年m月d日",###}</p></td>
+        </tr>
+      </table>
+	  <p>“本次借款总额”为甲方在翔易贷网站发布借款申请时审核通过的最高额度内的借款金额；本次借款本金以筹集期满后划转至甲方账户的金额为准。</p>
+      <strong class="font_lendig">第四条：担保条款</strong>
+      <p> 1.本合同项下借款的担保方式为方未到期翔易贷网站投资款项为债权质押担保。
+</p>
+    <!--<p>2.甲方为保证还款，现以其持有的如下商业承兑汇票向本次借款的所有乙方出质，商业承兑汇票明细及借款说明如下<br/>汇票到期日:{$binfo.deadline|date="Y年m月d日",###}，{$binfo.borrow_info}
+</p>-->
+    <p>2.质押担保的范围包括但不限于借款本金、利息（包括法定利息、约定利息、复利、罚息）、补偿金、违约金、损害赔偿金、实现债权的一切费用（包括诉讼费用、律师费用、公证费用、执行费用、鉴定费用、保管费用、评估费用、拍卖费用、差旅费用、税金等）。
+</p>
+    <!--<strong class="font_lendig">第五条：甲方（借款人）保证与承诺 </strong>
+    <p>1.保证用于质押的票据系合法取得，票面背书连续无瑕疵，不存在伪造、变造行为，票据未被挂失、止付、冻结或者被采取其他强制性措施，不存在任何法律纠纷。
+</p>
+    <p>2.在票据质押给乙方前，与票据前手所发生的任何纠纷和经济损失均由甲方自行承担。
+</p>
+    <p>3.承诺按时交付票据和办理质押手续。
+</p>
+    <p>4.质权存续期间，不得赠与、转让、再质押或以其他任何方式处分本合同质押票据。
+</p>
+    <p>5.质权存续期间，不得就出质票据进行挂失止付或者申请公示催告。
+</p>
+    <p>6.在甲方清偿全部应付本息及其它应付费用之前，该质押不得解除。</p>
+	<p>7.甲方因隐瞒质物存在共有、争议、被查封、或已设定质押权等情况而给乙方造成经济损失的，应向乙方支付本合同项下借款本金 30％的违约金，违约金不足以弥补乙方损失的，甲方还应就不足部分予以赔偿。</p>
+    <strong class="font_lendig">第六条：票据质押条款</strong>
+    <p>（一）委托质押</p>
+    <p>1.乙方不可撤销地委托翔易贷代为办理票据质押手续并行使质权，具体事项约定如下：
+</p>
+    <p>（1）由翔易贷平台代为接收甲方交付的质押票据，自合同签订之日交付票据。
+</p>
+    <p>（2）如借款不成功，由翔易贷平台将票据退还甲方。</p>
+	<p>（3）由翔易贷平台或翔易贷平台委托专业机构代为验证票据的真伪、保管质押票据。</p>
+	<p>（4）为了乙方的利益，代为签署与质押票据借款相关的法律文书。</p>
+	<p>（5）乙方委托翔易贷平台代为办理票据质押背书、托收手续。</p>
+	<p>（6）乙方委托翔易贷平台行使质权，受领质押票据到期后的兑付资金，用于优先清偿本次借款本息及其他应付费用，并将剩余款项（如有）退还甲方。</p>
+	<p>（7）授权翔易贷平台在认为必要时，代乙方对甲方进行违约提醒及催收工作，包括但不限于：电话或邮件通知、上门催收、发律师函、对甲方提起诉讼等。乙方在此确认，翔易贷平台可以将此工作委托给其他方进行。</p>
+	<p>2.甲方对上述委托的事项已明确知晓并认可翔易贷平台的以上权利，承担质押行为对甲方的一切法律后果，并放弃一切抗辩。</p>
+	<p>3.上述委托事项委托权限自乙方订立本合同时开始至本次借款本息及其他相关费用全额得到清偿之日止。</p>
+	<p>4.乙方对翔易贷平台的代理行为所产生的法律后果承担责任。</p>
+	<p>（二）质权的实现</p>
+	<p>质押票据到期后，甲方同意翔易贷平台直接托收质押票据并受领票据兑付资金，用于清偿本合同到期借款本息及其他应付费用。清偿借款后的剩余款项（如有），翔易贷平台应退还至甲方账户。</p>-->
+
+    <strong class="font_lendig">第五条：双方权利义务</strong>
+    <p>（一）乙方的权利义务
+</p>
+    <p>1.承诺提供的信息真实、准确、有效，出借资金来源合法。
+</p>
+    <p>2.筹集期内自愿登录翔易贷网站进行投资并完成本合同订立，将出借资金划入翔易贷平台指定的银行账户，同意借款起息日（不含）前不计利息。
+</p>
+    <p>3.同意翔易贷平台按约将出借资金划至甲方账户；如借款不成功，同意翔易贷平台将收到的出借资金退回乙方账户。</p>
+ 
+    <p>4.同意翔易贷平台直接从甲方的还款资金中划扣应收服务费（含平台管理费），具体金额计算方式以翔易贷网站公告的《翔易贷平台网站费用及其他规则》为准。
+</p>
+    <p>5.应保证其账户状态正常，确保资金划入、划出交易的完成。
+</p>
+<p>（二）甲方的权利义务
+</p>
+<p>1.登录翔易贷网站提交借款项目的发布申请，如实填写甲方身份信息和借款信息，阅读并确认合同内容后签订本合同。
+</p>
+    
+    <p>2.承诺提供的信息真实、准确、有效，不得隐瞒任何影响或可能影响其资信能力的事项。
+</p>
+    <p>3.承诺所借款项用于本合同约定用途且借款用途合法合规。
+</p>
+    <p>4.按约及时还款，将足额的本息划入翔易贷平台指定的银行账户，并同意翔易贷平台按约将对应本息划至各乙方账户。具体金额计算方式以翔易贷网站公告的《翔易贷平台网站费用及其他规则》为准。
+</p>
+    <p>5.应保证其账户状态正常，确保资金划入、划出交易的完成。
+</p>
+
+	 <strong class="font_lendig">第六条：提前还款及逾期还款责任</strong>
+    <p>1.甲方可在借款起息日至质押票据到期前的任一工作日提前归还借款本息。甲方提前还款的，应一次性清偿借款本金及全部利息，含向各出借人需支付的提前还款补偿金，具体应还金额以翔易贷网站公告的《翔易贷平台网站费用及其他规则》计算结果为准。
+</p>
+<p>2.甲方改变借款用途、违反本合同任一承诺或义务、出现停业、歇业、申请或被宣告破产、解散、被吊销营业执照、财务状况恶化、经营出现困难、签署可能影响其还款能力的合同或协议、财产被采取保全措施、与任意第三方的合同发生违约或涉及经济纠纷等可能或足以影响其还款能力的情形时，为维护乙方的合法权益，甲方同意根据乙方之受托人即丙方的要求提前还款、处分质物或追加担保。</p>
+<p>3.本合同项下的借款发生逾期的，甲方应对逾期款项自逾期之日起支付罚息，直至清偿为止。具体计算方式以翔易贷网站公告的《翔易贷平台网站费用及其他规则》计算结果为准。翔易贷平台有权将甲方逾期还款的事宜在网站上公布。</p>
+<p>4.本合同项下的借款逾期超过30天，或在逾期后出现逃避、拒绝沟通或拒不承认欠款等恶意行为的，翔易贷平台有权将甲方违约失信的相关信息向媒体、用人单位、公安机关、检察机关等披露，并有权将甲方的“逾期记录”提供给中国人民银行金融信用信息基础数据库及其他依法设立的征信机构。</p>
+<p>5.逾期还款的,甲方还应承担实现债权的全部费用，包括但不限于诉讼费用、律师费用、公证费用、执行费用、鉴定费用、保管费用、评估费用、拍卖费用、差旅费用、税金等。</p>
+	 <strong class="font_lendig">第七条：双方约定的其他事项</strong>
+    <p>1.合同各方授予翔易贷平台向合作银行及其他依法设立的机构查询并获取其真实身份及与合同项下交易有关的信息的权利。
+</p>
+    <p>2.本次借款项下有多个乙方的，甲方对所有乙方订立的具体合同均予以承认并履行。
+</p>
+    <p>3.甲方须确保一次性足额偿还本次借款本息、提前还款补偿金和逾期还款罚息等应付款项，否则不视为还款，由此引起的法律后果及违约责任由甲方承担。
+</p>
+<p>4.本合同项下的还款（包括但不限于正常还款、逾期还款、提前还款、代偿还款等）方式如下：
+</p>
+<p>甲方须登录翔易贷网站通过其绑定的银行账户来完成还款，或者通过翔易贷平台认可的其他还款方式来完成，否则不视为还款，由此引起的法律后果及违约责任由甲方承担。
+</p>
+<p>5.本合同项下的收款、还款等数据信息均以翔易贷网站生成并保存的内容为准，合同各方可以随时登录翔易贷网站查询。
+</p>
+<p>6.合同各方应对其他方提供的信息及本合同内容保密，未经其他方同意，任何一方不得向合同主体之外的任何人披露，但法律、行政法规另有强制性规定，或监管、审计等有权机关另有强制性要求的除外。
+</p>
+<p>7.合同各方均为翔易贷网站的注册会员。合同各方知悉并同意遵守翔易贷网站公布的《翔易贷平台网站服务协议》、《翔易贷平台网站费用及其他规则》的规定，接受翔易贷网站对前述文本的修订。</p>
+<p>8.本合同采用电子文本形式制成，并在翔易贷网站上保留存档。合同各方按约完成合同订立后，认同其与签名或盖章具有同等的法律效力，不以此签约方式为由拒绝履行本合同项下的义务。各方同意，因履行本合同有争议的，以翔易贷网站所保留的合同等文件版本及网站解释为准。</p>
+<p>9.乙方、甲方如因其账户（借记卡）发生销户、换卡、挂失和司法冻结等情况时，为保证业务正常开展，应自行重新绑定其它正常账户。如未及时绑定银行账户造成资金无法出入账的，须及时通知并申请翔易贷平台协助完成后续处理，并承担由此产生的不利后果及相应责任。</p>
+	 <strong class="font_lendig">第八条：法律的适用和争议的解决</strong>
+    <p>本合同受中华人民共和国法律管辖并按中华人民共和国法律解释。合同履行中发生争议，可由各方协商解决，协商不成可向被告所在地人民法院起诉。与翔易贷平台有关的争议，向翔易贷平台注册所在地人民法院起诉。
+</p>
+<p>特别提示<br/></p>
+    <p>1.甲方、乙方账户所属银行提供所开立账户的资金结算服务，对业务中涉及的借贷资金风险不承担任何担保、偿还的义务。
+</p>
+    <p>2.翔易贷网站为甲方、乙方提供信息发布、交易撮合、合同订立媒介服务，甲方、乙方在网站绑定账户及密码口令的安全性须自行管理及承担。
+</p>
+<p>3.甲方、乙方应确保在账户所属银行及翔易贷网站登记的联系方式准确、有效，翔易贷平台按该联系方式向合同各方发送通知及信息。
+</p>
+<p>4.合同各方应按照法律规定自行处理。</p>
+<br/>
+<br/>
+	  <div class="Seal" style="float:left;">
+         甲方（借款人）：{$mBorrow.real_name|default='未填写'}</div><br/>
+		 <div class="Seal" style="float:left;">
+         乙方（出借人）：{$mInvest.real_name|default='未填写'}</div><br/>
+      <div class="Seal" style="float:left;">
+         丙方（见证人/服务商）：山东翔宇资产管理股份有限公司（翔易贷网络服务平台）</div></br></br>
+		 <div class="Seal" style="float:left;">{$binfo.second_verify_time|date="Y年m月d日",###}
+	 </div> 
+	   <div class="Seal" style="float:right;">
+         <img src="/Style/ad_right/zichan.png" border="0" width="250px" height="250px"></div>
+		
+    </div>
+  </div>
+</div>
+</body>
+</html>

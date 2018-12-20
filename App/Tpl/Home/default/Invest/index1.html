@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$glo.index_title}</title>
+    <meta name="keywords" content="{$glo.web_keywords}" />
+    <meta name="description" content="{$glo.web_descript}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="/style/new/css/main.css">
+    <link rel="stylesheet" href="/style/new/css/common.css" />
+
+</head>
+
+<body>
+
+    <include file="Public:_header_inner" />
+
+    <div class="xuanxiang">
+        <div class="filterbox">
+            <div class="attr">
+                <div class="attrKey">认证标识：</div>
+                <div class="attrValues">
+                    <ul>
+                        <li><a href="#" class="cur">不限</a></li>
+                        <li><a href="#">信用标</a></li>
+                        <li><a href="#">担保标</a></li>
+                        <li><a href="#">秒还标</a></li>
+                        <li><a href="#">净值标</a></li>
+                        <li><a href="#">抵押标</a></li>
+                        <li><a href="#">流转标</a></li>                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attr">
+                <div class="attrKey">金额范围：</div>
+                <div class="attrValues">
+                    <ul>
+                        <li><a href="#" class="cur">不限</a></li>
+                        <li><a href="#">5000-2万</a></li>
+                        <li><a href="#">2万-5万</a></li>
+                        <li><a href="#">5万-10万</a></li>
+                        <li><a href="#">10万-50万</a></li>
+                        <li><a href="#">50万-200万</a></li>
+                        <li><a href="#">200万-1000万</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attr">
+                <div class="attrKey">年化收益：</div>
+                <div class="attrValues">
+                    <ul>
+                        <li><a href="#" class="cur">不限</a></li>
+                        <li><a href="#">6%-8%</a></li>
+                        <li><a href="#">8%-10%</a></li>
+                        <li><a href="#">10%-12%</a></li>
+                        <li><a href="#">12%-14%</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attr">
+                <div class="attrKey">投资期限：</div>
+                <div class="attrValues">
+                    <ul>
+                        <php>foreach($searchMap['borrow_duration'] as $key=>$v){</php>
+                        <php>if($key==$searchUrl['borrow_duration']['cur']){</php>
+                        <li><a class="cur" href="__ROOT__/invest/index.html">{$v}</a></li>
+                        <php>}else{</php>
+                        <li><a href="__URL__/index.html?type=search&{$searchUrl.borrow_duration.url}&borrow_duration={$key}">{$v}</a></li>
+                        <php>}</php>
+                        <php>}</php>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="attr">
+                <div class="attrKey">投资状态：</div>
+                <div class="attrValues">
+                    <ul>
+                        <php>foreach($searchMap['borrow_status'] as $key=>$v){</php>
+                        <php>if($key==$searchUrl['borrow_status']['cur']){</php>
+                        <li><a class="cur">{$v}</a></li>
+                        <php>}else{</php>
+                        <li><a href="__URL__/index.html?type=search&{$searchUrl.borrow_status.url}&borrow_status={$key}">{$v}</a></li>
+                        <php>}</php>
+                        <php>}</php>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="school-box">
+            <div class="schooltit"><h2>信贷学堂</h2></div>
+            <div class="schoolnr">
+                <ul>
+                    <php>$xlist = getArticleList(array("type_id"=>2,"limit"=>7)); foreach($xlist['list'] as $kx => $va){</php>
+                    <li><a href="{$va.arturl}" target="_blank">{$va.title|cnsubstr=###,17}</a></li>
+                    <php>};$xlist=NULL;</php>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="touzinr">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="27%">项目名称</th>
+                    <th width="10%">年化利率</th>
+                    <th width="10%">项目期限</th>
+                    <th width="10%">项目总额</th>
+                    <th width="10%">进度</th>
+                    <th width="10%">状态</th>
+                    <th width="10%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="list.list" id="vb">
+                    <tr>
+                        <td><div class="protitle"><a href="{$vb.id|getInvestUrl=###}" title="{$vb.borrow_name}" class="BL_name">{$vb.borrow_name|cnsubstr=###,12}</a></div></td>
+                        <td><div class="jiacu">{$vb.borrow_interest_rate}&nbsp;%</div></td>
+                        <td>
+                            {$vb.borrow_duration}</span>&nbsp;
+                            <if condition="$vb['repayment_type'] eq 1">
+                                天
+                                <else />
+                                个月
+                            </if>
+                        </td>
+                        <td>{$vb.borrow_money|getMoneyFormt=###}&nbsp;元</td>
+                        <td>{$vb.progress|intval}%</td>
+                        <td>
+                            <span>
+                                <if condition="$vb.borrow_status eq 3">
+                                    已流标
+                                    <elseif condition="$vb.borrow_status eq 4" />
+                                    复审中
+                                    <elseif condition="$vb.borrow_status eq 6" />
+                                    还款中
+                                    <elseif condition="$vb.borrow_status gt 6" />
+                                    已完成
+                                    <else />
+                                    <a href="{$vb.id|getInvestUrl=###}">立即投标</a>
+                                </if>
+                            </span>
+                        </td>
+                        <td><div class="touzi"><a href="{$vb.id|getInvestUrl=###}">立即投资</a></div></td>
+                    </tr>
+                    </volist>
+          </tbody>
+        </table>
+       
+    </div>
+
+    <div class="list_bottom">
+        <div class="list_bottom_right">
+            <ul>
+                {$list.page}
+            </ul>
+        </div>
+    </div>
+    <include file="Public:_footer" />
+</html>
+

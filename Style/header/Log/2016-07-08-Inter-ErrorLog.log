@@ -1,0 +1,2 @@
+2016-07-08 14:32:55	/Style/header/upload.php?uid=1562	ERROR	E_NOTICE	Code 8	Undefined index:  HTTP_USER_AGENT	/www/web/xyjrp2p_new/Style/header/Lib/Controller/AvatarFlashUpload.php	Line 57
+2016-07-08 14:32:55	/Style/header/upload.php?uid=1562	ERROR	E_NOTICE	Code 8	Undefined index:  HTTP_USER_AGENT	/www/web/xyjrp2p_new/Style/header/Lib/Controller/AvatarFlashUpload.php	Line 62

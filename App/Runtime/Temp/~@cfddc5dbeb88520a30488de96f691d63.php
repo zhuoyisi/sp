@@ -1,0 +1,3 @@
+<?php
+//000012960000a:5:{i:0;a:4:{s:8:"link_txt";s:12:"站长统计";s:9:"link_href";s:20:"http://www.cnzz.com/";s:8:"link_img";s:1:" ";s:9:"link_type";s:1:"1";}i:1;a:4:{s:8:"link_txt";s:9:"阿里云";s:9:"link_href";s:21:"http://www.aliyun.com";s:8:"link_img";s:1:" ";s:9:"link_type";s:1:"1";}i:2;a:4:{s:8:"link_txt";s:12:"网贷天眼";s:9:"link_href";s:22:"http://www.p2peye.com/";s:8:"link_img";s:1:" ";s:9:"link_type";s:1:"1";}i:3;a:4:{s:8:"link_txt";s:12:"中国银行";s:9:"link_href";s:18:"http://www.boc.cn/";s:8:"link_img";s:1:" ";s:9:"link_type";s:1:"1";}i:4;a:4:{s:8:"link_txt";s:12:"临商银行";s:9:"link_href";s:24:"http://www.lsbchina.com/";s:8:"link_img";s:1:" ";s:9:"link_type";s:1:"1";}}
+?>

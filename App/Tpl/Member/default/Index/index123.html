@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的账户-- {$glo.web_name}</title>
+    <!--{$uclogin}-->
+    <meta name="Keywords" content="p2p理财，互联网金融，投资理财产品，个人投资理财，短期理财" />
+    <meta name="description" content="互联网投资理财金融服务p2p平台">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="/style/new/css/main.css">
+    <link rel="stylesheet" href="/style/new/css/common.css" />
+</head>
+<body>
+    <include file="default:Public:_header_main" group="Home" />
+    <include file="Public:_left_new" />
+
+        <div class="account_r">
+            <!--右侧个人信息部分---->
+            <div class="my-info">
+                <div class="info_l">
+                    <div class="myphoto"><img src="/style/new/images/myphoto.jpg" /></div>
+                    <div class="myinfo">
+                        <div class="welcome">您好!{:session('u_user_name')} </div>
+                        <div class="mylevel" title="投资积分：{$minfo.integral|default=0}分">投资等级:&nbsp;<span>{$minfo.integral|getInvestLeveIco=###,2}</span></div>
+                    </div>
+                </div>
+                <div class="info_m">
+                    <div class="prove">
+                        <ul>
+                            <li><a href="#"><img src="/style/new/images/shouji.png" /></a></li>
+                            <li><a href="#"><img src="/style/new/images/youxiang.png" /></a></li>
+                            <li><a href="#"><img src="/style/new/images/shenfenzheng.png" /></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="safety">信用等级：{$minfo.credits|getLeveIco=###,3} </div>
+                </div>
+                <div class="info_r">
+                    <div class="total">账户余额：<span>{:Fmoney($minfo['account_money']+$minfo['back_money'])}</span></div>
+                    <div class="other">冻结总额：{$minfo.money_freeze|Fmoney=###} &nbsp;可用余额：{:Fmoney($minfo['account_money']+$minfo['back_money'])}</div>
+                    <div class="other">待收总额：{$minfo.money_collect|Fmoney=###} &nbsp;待收利息：{$benefit.interest_collection|Fmoney=###}</div>
+                    <!--<div class="shouyi">积累收益：<span>32,672</span></div>-->
+                </div>
+            </div>
+
+            <div class="bangding"><if condition="$minfo.user_leve eq 0">
+    您还未申请VIP(<a href="__APP__/member/vip">申请VIP</a>)
+    <elseif condition="$minfo.time_limit gt time()" />
+    <else />
+    您的VIP已于{$minfo.time_limit|date="Y-m-d",###}到期(<a href="__APP__/member/vip">重新申请</a>)
+</if></div>
+            <div class="xiangjiedai">
+                <div class="shujutit">翔借贷-资产总额：<span>{:Fmoney($minfo['account_money']+$minfo['back_money']+$minfo['money_collect']+$minfo['money_freeze'])}</span></div>
+                <div class="shujunr">
+                    <table width="87%" height="98" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="19%">可用资金</td>
+                            <td width="19%">冻结资金</td>
+                            <td width="21%">待收总额</td>
+                            <td colspan="2">已赚取收益</td>
+                        </tr>
+                        <tr>
+                            <td>{:Fmoney($minfo['account_money']+$minfo['back_money'])}</td>
+                            <td>{$minfo.money_freeze|Fmoney=###}</td>
+                            <td>{$minfo.money_collect|Fmoney=###}</td>
+                            <td width="21%" title="待收总额=待收本金+待收利息">待收本金:{$benefit.capital_collection|Fmoney=###}</td>
+                            <td width="20%">待收利息:{$benefit.interest_collection|Fmoney=###}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="xiangjiedai">
+                <div class="shujutit">吉翔财富-资产总额：<span>123343</span></div>
+                <div class="shujunr">
+                    <table width="87%" height="98" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>待回收本金</td>
+                            <td>预期收益</td>
+                            <td>已收回本金</td>
+                            <td>已赚取收益</td>
+                        </tr>
+                        <tr>
+                            <td>&yen;0.00</td>
+                            <td>&yen;0.00</td>
+                            <td>&yen;0.00</td>
+                            <td>&yen;0.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="transaction">
+                <div class="shujutit">交易记录</div>
+                <div class="shujunr">
+                    <table width="87%" height="98" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>发生日期</td>
+                            <td>类型</td>
+                            <td>影响金额</td>
+                            <td>冻结金额</td>
+                            <td>待收金额</td>
+                            <td>可用余额</td>
+                        </tr>
+                        <tr>
+                            <td>2015-06-24</td>
+                            <td>企业直投投标奖励</td>
+                            <td>4343532</td>
+                            <td>324234</td>
+                            <td>234324</td>
+                            <td>464365</td>
+                        </tr>
+                        <tr>
+                            <td>2015-06-24</td>
+                            <td>企业直投投标奖励</td>
+                            <td>4343532</td>
+                            <td>324234</td>
+                            <td>234324</td>
+                            <td>464365</td>
+                        </tr>
+                        <tr>
+                            <td>2015-06-24</td>
+                            <td>企业直投投标奖励</td>
+                            <td>4343532</td>
+                            <td>324234</td>
+                            <td>234324</td>
+                            <td>464365</td>
+                        </tr>
+                        <tr>
+                            <td>2015-06-24</td>
+                            <td>企业直投投标奖励</td>
+                            <td>4343532</td>
+                            <td>324234</td>
+                            <td>234324</td>
+                            <td>464365</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <include file="default:Public:_footer" group="Home" />
+</html>
+

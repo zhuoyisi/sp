@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'uid', 1 => 'address', 2 => 'tel', 3 => 'contact1', 4 => 'contact1_re', 5 => 'contact1_tel', 6 => 'contact2', 7 => 'contact2_re', 8 => 'contact2_tel', 9 => 'contact1_other', 10 => 'contact2_other', 11 => 'contact3', 12 => 'contact3_re', 13 => 'contact3_tel', 14 => 'contact3_other', '_autoinc' => false, '_pk' => 'uid', ); ?>
