@@ -1,2 +1,0 @@
-<?php
-return array ( 0 => 'id', 1 => 'menu', 2 => 'cat', 3 => 'sort_order', 4 => 'title', 5 => 'art_content', 6 => 'art_uid', 7 => 'art_time', 8 => 'art_img', 9 => 'last_repay_time', 10 => 'repay_num', 11 => 'click_num', 12 => 'is_hidden', '_autoinc' => true, '_pk' => 'id', ); ?>

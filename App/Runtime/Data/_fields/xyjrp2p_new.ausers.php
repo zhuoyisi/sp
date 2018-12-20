@@ -1,2 +1,0 @@
-<?php
-return array ( 0 => 'id', 1 => 'user_name', 2 => 'user_pass', 3 => 'u_group_id', 4 => 'real_name', 5 => 'last_log_time', 6 => 'last_log_ip', 7 => 'is_ban', 8 => 'area_id', 9 => 'area_name', 10 => 'is_kf', 11 => 'qq', 12 => 'phone', 13 => 'user_word', 14 => 'photo', 15 => 'sex', 16 => 'card', 17 => 'email', 18 => 'province', 19 => 'city', 20 => 'area', 21 => 'address', 22 => 'content', 23 => 'parent', 24 => 'add_time', 25 => 'guanlian_time', '_autoinc' => true, '_pk' => 'id', ); ?>

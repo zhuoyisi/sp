@@ -1,2 +1,0 @@
-<?php
-return array ( 0 => 'uid', 1 => 'fin_monthin', 2 => 'fin_incomedes', 3 => 'fin_monthout', 4 => 'fin_outdes', 5 => 'fin_house', 6 => 'fin_housevalue', 7 => 'fin_car', 8 => 'fin_carvalue', 9 => 'fin_stockcompany', 10 => 'fin_stockcompanyvalue', 11 => 'fin_otheremark', '_autoinc' => false, '_pk' => 'uid', ); ?>

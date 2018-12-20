@@ -1,3 +1,0 @@
-<?php
-//000012960000a:2:{s:7:"ad_type";s:1:"0";s:7:"content";s:585:"<h2>联系我们</h2><p><span class="le"><img width="13" height="13" style="height:13px;width:13px;float:none;margin:0px;" src="/UF/Uploads/Article/20140503152613.jpg" /></span>山东省临沂市兰山区沂蒙路336号</p><p><span class="le"><img width="13" height="12" style="height:12px;width:13px;float:none;margin:0px;" src="/UF/Uploads/Article/20140503152657.jpg" /></span>400-1539-365</p><p><span class="le"><img width="13" height="13" style="height:13px;width:13px;float:none;margin:0px;" src="/UF/Uploads/Article/20140503152736.jpg" /></span>E-mai:lxyjrp2p@xiangyugroup.cn</p>";}
-?>

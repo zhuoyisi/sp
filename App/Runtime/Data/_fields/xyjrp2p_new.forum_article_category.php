@@ -1,2 +1,0 @@
-<?php
-return array ( 0 => 'id', 1 => 'type_name', 2 => 'type_keyword', 3 => 'parent_id', 4 => 'type_nid', 5 => 'sort_order', 6 => 'is_show', 7 => 'is_sys', 8 => 'is_repay', '_autoinc' => true, '_pk' => 'id', ); ?>

@@ -1,2 +1,0 @@
-<?php
-return array ( 0 => 'uid', 1 => 'house_dizhi', 2 => 'house_mianji', 3 => 'house_nian', 4 => 'house_gong', 5 => 'house_suo1', 6 => 'house_suo2', 7 => 'house_feng1', 8 => 'house_feng2', 9 => 'house_dai', 10 => 'house_yuegong', 11 => 'house_shangxian', 12 => 'house_anjiebank', '_autoinc' => false, '_pk' => 'uid', ); ?>

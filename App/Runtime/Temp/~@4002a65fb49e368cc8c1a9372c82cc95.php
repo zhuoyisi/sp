@@ -1,3 +1,0 @@
-<?php
-//000012960000a:25:{s:4:"news";s:1:"2";s:7:"aboutus";s:1:"8";s:18:"aboutus-ruleserver";s:1:"6";s:15:"aboutus-jianjie";s:2:"10";s:13:"aboutus-zizhi";s:2:"11";s:12:"aboutus-zfsm";s:2:"16";s:14:"aboutus-youshi";s:2:"23";s:13:"aboutus-zcfgd";s:2:"17";s:15:"aboutus-chanpin";s:2:"26";s:13:"aboutus-zuzhi";s:2:"30";s:17:"aboutus-gongshang";s:2:"31";s:15:"aboutus-pingtai";s:2:"24";s:16:"aboutus-fengxian";s:2:"25";s:15:"aboutus-jieshao";s:2:"29";s:15:"aboutus-cunguan";s:2:"35";s:16:"aboutus-shixiang";s:2:"36";s:15:"aboutus-yunying";s:2:"32";s:14:"aboutus-shenji";s:2:"33";s:13:"aboutus-beian";s:2:"34";s:15:"aboutus-zhengce";s:2:"37";s:6:"danbao";s:1:"7";s:7:"gonggao";s:1:"9";s:4:"xsrm";s:2:"22";s:13:"borrow_notice";s:2:"27";s:13:"active_notice";s:2:"28";}
-?>

@@ -1,2 +1,0 @@
-<?php
-return array ( 'stmp' => array ( 'server' => 'smtp.sina.com', 'port' => '25', 'user' => 'xyd_2016@sina.com', 'pass' => 'xyd123456', ), 'sms' => array ( 'type' => '3', 'user1' => 'xiangyuzichan', 'pass1' => 'xiangyuzichan123456', 'user2' => '', 'pwd' => '', 'user3' => '0SDK-EBB-6688-JFSTS', 'pass3' => '292495', ), 'baidu' => array ( 'apiKey' => 'k5mt8cZINNQI4Cl8gIqMAnnO', 'secretKey' => 'PychX6ID9fYt6DtFMmvMavxnP7xDS9kR', 'apkVersion' => '1.0', 'apkPath' => 'http://wap.lvmaque.cn/style/lmq.apk', ), ); ?>

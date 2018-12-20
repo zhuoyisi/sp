@@ -1,2 +1,0 @@
-2016-06-13 14:08:16	/Style/header/upload.php?uid=49	ERROR	E_NOTICE	Code 8	Undefined index:  HTTP_USER_AGENT	C:\phpStudyB\WWW\Style\header\Lib\Controller\AvatarFlashUpload.php	Line 57
-2016-06-13 14:08:16	/Style/header/upload.php?uid=49	ERROR	E_NOTICE	Code 8	Undefined index:  HTTP_USER_AGENT	C:\phpStudyB\WWW\Style\header\Lib\Controller\AvatarFlashUpload.php	Line 62
